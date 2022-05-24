@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store Sales Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+    
+
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+
+            <div class="logo"><a href="#"><span>Store Sales Prediction</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#predict" class="menu-btn">Predict</a></li>
+                <li><a href="#services" class="menu-btn">Tools</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="/analysis" class="menu-btn">Analysys</a></li>
+                <li><a href="/logout" class="login">logout</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Welcome to</div>
+                <div class="text-2">Online Store Sales Predictor</div><br>
+                <div class="text-4">Predict sales by just one click...!</div>
+
+                <a href="#">Predict</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Project</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Introduction<span class="typing-2"></span></div>
+                    <p>Since competition is increasing day by day among retailers at the market, store owners are
+                        focusing more predictive analytics techniques in order to decrease their costs and increase
+                        their productivity and profit by predicting the sales that are going to happen in the future
+                        like in one month, one week, daily etc. Sales prediction solves many problems for the retailers
+                        like excessive stocks (overstock) and out-of-stock (stockouts). Excess inventory can also lead
+                        to increased storage, labour, and insurance costs, and quality reduction and degradation
+                        depending on the type of the product. Out-of-stock products can result in lost for sales and
+                        reduced customer satisfaction and store loyalty. If customers cannot find products at the
+                        shelves that they are looking for, they might shift to another competitor or buy substitute
+                        items. That’s where sales prediction comes in. Using machine learning and artificial
+                        intelligence techniques we will be able to solve many problems like storage, labour, insurance
+                        costs quality upgradation or degradation. Especially at middle and low-level segments,
+                        customer’s loyalty is quite difficult for retailers. Sales and customer loss is a critical
+                        problem for retailers. Considering competition and financial constraints in retail industry, it
+                        is very crucial to have an accurate demand forecasting and inventory control system for
+                        management of effective operations. It seems that retail industry will face more competition in
+                        future<span id="dots">...</span><span id="more">Therefore, the usage of
+                            technological tools and predictive methods is becoming more
+                            popular and necessary for retailers. Traders in different sectors are looking for automated
+                            demand forecasting, sales predictors and replenishment solutions that use big data and
+                            predictive analytics technologies. These forecasting approaches predict future sales for
+                            particular stores based on historical time series data which is a sequence of data points
+                            measured at successive intervals in time. These methods use a limited number of historical
+                            time-series data related with demand. In the last two decades, data mining and machine
+                            learning
+                            models have drawn more attention and have been successfully applied to time series
+                            forecasting.
+                            Machine learning forecasting methods can use a large amount of data and features related
+                            with
+                            demand and predict future sales and patterns using different learning algorithms. Among many
+                            machine learning methods, deep learning and neural methods have become very popular and have
+                            been recently applied to many fields. Ensemble learning is also another methodology to boost
+                            the
+                            system performance. An ensemble system is composed of two parts: ensemble generation and
+                            ensemble integration. In ensemble generation part, a diverse set of base prediction models
+                            is generated by using different methods or samples. In integration part, the predictions of
+                            all
+                            models are combined by using an integration </span> </p>
+
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My team</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/profile-1.jpeg') }}" alt="">
+                        <div class="text">Saurabh Shinde</div>
+                        <p>Model Building and deployment</p>
+                        <p>saurabhshinde028@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/profile-2.jpeg') }}" alt="">
+                        <div class="text">Vaibhav Karanjkar</div>
+                        <p>Data Collection and Preprocessing</p>
+                        <p>karanjkar01@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/profile-3.jpg') }}" alt="">
+                        <div class="text">Raj Shirsath</div>
+                        <p>Presentation</p>
+                        <p>raj1234@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="{{ url_for('static', filename='images/profile-4.jpeg') }}" alt="">
+                        <div class="text">Vaishnavi Vibhute</div>
+                        <p>Web-Design and Paperwork Vaishnavi@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- prediction section start -->
+
+    <section class="predict" id="predict">
+        <form action="/predict" class="form" method="post">
+            <h1>Make Prediction</h1>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="exampleInputage1" class="form-label">Enter your store ID (1-1115)</label><br>
+                        <input id="id" name="id" class="form-control" placeholder="Enter Store ID" required min="1" max="1115">
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="exampleInputage1" class="form-label">Date </label><br>
+                        <input id="date" name="date" type="date" class="form-control" required min="2013-01-01" max="2018-01-01" >
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="mb-3">
+                        <label for="exampleInputgender" class="form-label">Will your store be open?</label><br>
+                        <select name="open" id="open" required="required" class="form-select"
+                            aria-label="Default select example">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="mb-3">
+                        <label for="exampleInputgender" class="form-label">Will there be state holiday?</label><br>
+                        <select name="state_holiday" id="state_holiday" required="required" class="form-select"
+                            aria-label="Default select example">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="mb-3">
+                        <label for="exampleInputgender" class="form-label">Will there be school holiday?</label><br>
+                        <select name="school_holiday" id="school_holiday" required="required" class="form-select"
+                            aria-label="Default select example">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="mb-3">
+                        <label for="exampleInputgender" class="form-label">Are you promoting?</label><br>
+                        <select name="promo" id="promo" required="required" class="form-select"
+                            aria-label="Default select example">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+
+                        </select>
+                    </div>
+                </div>
+                
+                <br>
+                <button id="sub" type="submit" class="btn btn-primary">Predict</button>
+            </div>
+        </form>
+        <br><br>
+        <h3>{{ prediction_text }}</h3>
+
+
+        </div>
+
+    </section>
+
+    <!-- tools used section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Tools Used</h2>
+            <div class="tools">
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/Python.png') }}" alt="">
+                    <div class="text">Python</div>
+                </div>
+
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/numpy.png') }}" alt="">
+                    <div class="text">Numpy</div>
+                </div>
+
+
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/pandas.png') }}" alt="">
+                    <div class="text">Pandas</div>
+                </div>
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/scikit-learn.png') }}" alt="">
+                    <div class="text">sklearn</div>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="tools">
+
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/tensorflow.png') }}" alt="">
+                    <div class="text">Tensorflow</div>
+                </div>
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/keras.png') }}" alt="">
+                    <div class="text">Keras</div>
+                </div>
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/flask.png') }}"alt="">
+                    <div class="text">Flask</div>
+                </div>               
+            </div>
+            <br><br>
+            <div class="tools">
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/html.jpg') }}" alt="">
+                    <div class="text">HTML 5</div>
+                </div>
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/css.png') }}" alt="">
+                    <div class="text">CSS3</div>
+                </div>
+                <div class="box2">
+                    <img src="{{ url_for('static', filename='images/js.png') }}" alt="">
+                    <div class="text">JavaScript</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>If you have any query or suggestions, please do contact us. We are happy to chat. Do you have any questions?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Saurabh Shinde</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Yeola, Nashik, Maharashtra</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">saurabhshinde028@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="/contact" method="post">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" name="name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" name="subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By Saurabh Shinde</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+</body>
+
+</html>
