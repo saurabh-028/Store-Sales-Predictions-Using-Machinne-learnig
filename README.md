@@ -2,12 +2,12 @@
 This repository contains the source code and resources for a Sales Prediction project. The project aims to predict sales figures based on historical data and various features using machine learning techniques.
 
 ## Table of Contents
-1. [Project Overview](#1-project-overview)
-2. [Features](#2-features)
-3. [Installation](#3-installation)
-4. [Results](#8-results)
-5. [Results Screenshots](#8-results-screenshots)
-6. [Contributing](#9-contributing)
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Results](#results)
+5. [Results Screenshots](#results-screenshots)
+6. [Contributing](#contributing)
 7. 
 ## Project Overview
 
