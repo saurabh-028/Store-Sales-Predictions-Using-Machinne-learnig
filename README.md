@@ -8,7 +8,7 @@ This repository contains the source code and resources for a Sales Prediction pr
 4. [Results](#results)
 5. [Results Screenshots](#results-screenshots)
 6. [Contributing](#contributing)
-7. 
+
 ## Project Overview
 
 Sales Prediction is the process of forecasting future sales based on historical data and relevant factors, such as marketing spend, seasonality, competitor activities, etc. This project aims to utilize machine learning algorithms to predict sales figures and assist businesses in making informed decisions.
@@ -36,8 +36,7 @@ The project achieves the following results on the evaluation dataset:
 - MAE for testing set is:  860.053526417619
 
 ## Results Screenshots
-
-Please refer to the project's documentation for more detailed results and analysis.
+![result-1](https://github.com/saurabh-028/Store-Sales-Predictions-Using-Machinne-learnig/blob/main/results/result-1.png)
 
 ## Contributing
 
