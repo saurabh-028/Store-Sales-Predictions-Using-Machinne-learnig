@@ -37,6 +37,9 @@ The project achieves the following results on the evaluation dataset:
 
 ## Results Screenshots
 ![result-1](https://github.com/saurabh-028/Store-Sales-Predictions-Using-Machinne-learnig/blob/main/results/result-1.png)
+![result-2](https://github.com/saurabh-028/Store-Sales-Predictions-Using-Machinne-learnig/blob/main/results/Screenshot%202023-06-26%20143058.png)
+![result-3](https://github.com/saurabh-028/Store-Sales-Predictions-Using-Machinne-learnig/blob/main/results/Screenshot%202023-06-26%20143150.png)
+![result-4](https://github.com/saurabh-028/Store-Sales-Predictions-Using-Machinne-learnig/blob/main/results/Screenshot%202023-06-26%20143314.png)
 
 ## Contributing
 
