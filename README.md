@@ -32,7 +32,7 @@ Sales Prediction is the process of forecasting future sales based on historical 
 The project achieves the following results on the evaluation dataset:
 
 - R-squared error for testing set is:  0.88
-- RMSE for testing set is:  1213.3973367361398
+- RMSE for training set is:  1213.3973367361398
 - MAE for testing set is:  860.053526417619
 
 ## Results Screenshots
